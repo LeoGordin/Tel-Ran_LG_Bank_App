@@ -4,15 +4,15 @@ import lombok.Getter;
 
 @Getter
 public enum CurrencyCode {
-    USD("USD"),
-    EUR("EUR"),
-    ILS("ILS"),
-    JPY("JPY"),
-    GBP("GBP"),
-    CHF("CHF"),
-    CAD("CAD"),
-    AUD("AUD"),
-    CNY("CNY");
+    USD("US Dollars"),
+    EUR("EU Euro"),
+    ILS("Israeli Shekel"),
+    JPY("Japanese Yen"),
+    GBP("British Pound"),
+    CHF("Switzerland Franc"),
+    CAD("Canadian Dollar"),
+    AUD("Australian Dollar"),
+    CNY("Chinese Yuan"),;
 
     private final String code;
 

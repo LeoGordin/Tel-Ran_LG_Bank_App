@@ -2,6 +2,7 @@ package lg_tel_ran.bank_app.domain.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lg_tel_ran.bank_app.domain.enums.CurrencyCode;
 import lg_tel_ran.bank_app.domain.enums.TransactionType;
 import lombok.Data;
 
@@ -35,6 +36,9 @@ public class Transaction {
 
     @Column(name = "amount")
     private BigDecimal amount;
+
+    @Column(name = "currency_code")
+    private CurrencyCode currency;
 
     @Column(name = "description")
     private String description;

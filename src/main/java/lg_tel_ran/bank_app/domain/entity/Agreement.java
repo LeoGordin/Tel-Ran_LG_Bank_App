@@ -3,6 +3,7 @@ package lg_tel_ran.bank_app.domain.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lg_tel_ran.bank_app.domain.enums.AgreementStatus;
+import lg_tel_ran.bank_app.domain.enums.CurrencyCode;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -35,6 +36,9 @@ public class Agreement {
 
     @Column(name = "sum")
     private BigDecimal sum;
+
+    @Column(name = "currency_code")
+    private CurrencyCode currency;
 
     @JsonIgnore
     @Column(name = "created_at")

@@ -6,7 +6,6 @@ import lombok.Getter;
 public enum ProductStatus {
     ACTIVE("Active"),
     INACTIVE("Inactive"),
-    BLOCKED("Blocked"),
     CLOSED("Closed");
 
     private final String status;
