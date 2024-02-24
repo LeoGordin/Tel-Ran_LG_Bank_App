@@ -19,7 +19,7 @@ import java.util.UUID;
 public class Manager {
 
     @Column(name = "id")
-    private UUID id;
+    private int id;
 
     @Column(name = "first_name")
     private String firstName;

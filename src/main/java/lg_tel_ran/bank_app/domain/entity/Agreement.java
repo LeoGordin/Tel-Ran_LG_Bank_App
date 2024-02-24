@@ -30,6 +30,7 @@ public class Agreement {
     @JoinColumn(name = "product_id")
     private Product product;
 
+
     @Column(name = "status")
     @Enumerated(EnumType.STRING)
     private AgreementStatus status;
@@ -39,6 +40,9 @@ public class Agreement {
 
     @Column(name = "currency_code")
     private CurrencyCode currency;
+
+    @Column(name = "interest_rate")
+    private float interestRate;
 
     @JsonIgnore
     @Column(name = "created_at")

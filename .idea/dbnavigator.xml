@@ -17,22 +17,17 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="3506c0c1-e401-49ce-b5cc-cf992a78db95">
-      <console name="Bank_App_DB" type="STANDARD" schema="lg_bank_app_db_2" session="Main"><![CDATA[ALTER TABLE agreement
-ADD COLUMN sum DECIMAL(18,2) NOT NULL DEFAULT 0.00;
-
-SELECT * FROM agreement;
+      <console name="Bank_App_DB" type="STANDARD" schema="lg_bank_app_db_2" session="Main"><![CDATA[SELECT * FROM agreement;
 
 ALTER TABLE agreement
-ADD CONSTRAINT fk_agreement_pk_product_id FOREIGN KEY (product_id) REFERENCES product(id);]]></console>
+ADD COLUMN interest_rate DECIMAL(5,2) NOT NULL DEFAULT 0.00;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="3506c0c1-e401-49ce-b5cc-cf992a78db95" object-ref="consoles/Bank_App_DB" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="3506c0c1-e401-49ce-b5cc-cf992a78db95" />
